@@ -37,5 +37,6 @@ public class HA7eStringMethods {
             System.out.print("\nDo you want to Return to Main Menu? Y/N...");
             repeat = sc.next().charAt(0);
         }while (repeat == 'Y' || repeat == 'y');
+        System.out.println("\nThanks for Using this Program");
     }
 }
