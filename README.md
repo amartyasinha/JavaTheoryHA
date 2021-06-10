@@ -43,3 +43,6 @@ WAP to demonstrate the different string handling methods in java.
 Prepare 10 important questions from the Lecture 6. It should reflect your understanding about the topic. Avoid discussing with your friends. It may reduce your score if similarities are found.
 ## Home Assignment (HA) No. 8(b)
 Answer the questions prepared in 8(a)
+
+## Author
+- [@amartyasinha918](https://www.github.com/amartyasinha918)
