@@ -54,18 +54,26 @@ public class StringMethods {
                 System.out.println("Select the String whose character you want to know using charAt(): ");
                 System.out.print("1. First Name\n2. Last Name\n3. Mobile No.\nChoice: ");
                 int option = sc.nextInt();
-                System.out.print("Enter the index to know the Character: ");
-                int index = sc.nextInt();
+                if (option >= 1 && option <= 3 ) {
+                    System.out.print("Enter the index to know the Character: ");
+                    int index = sc.nextInt();
 
-                String position = "th";
-                if (index == 0) { position = "st"; }
-                if (index == 1) { position = "nd"; }
-                if (index == 2) { position = "rd";}
+                    String position = "th";
+                    if (index == 0) { position = "st"; }
+                    if (index == 1) { position = "nd"; }
+                    if (index == 2) { position = "rd";}
 
-                if (option == 1) { System.out.printf("The %d%s letter (index %d) of your first name is %s ", (index+1), position, index, fName.charAt(index) ); }
-                else if (option == 2) { System.out.printf("The %d%s letter (index %d) of your last name is %s", (index+1), position, index, lName.charAt(index)); }
-                else if (option == 3) { System.out.printf("The %d%s letter (index %d) of your mobile no. is %s", (index+1), position, index, mobile.charAt(index)); }
-                else { System.out.println("Wrong Option!");}
+                    switch (option) {
+                        case 1 -> System.out.printf("The %d%s letter (index %d) of your first name is %s ", (index+1), position, index, fName.charAt(index) );
+
+                        case 2 -> System.out.printf("The %d%s letter (index %d) of your last name is %s", (index+1), position, index, lName.charAt(index));
+
+                        case 3 -> System.out.printf("The %d%s letter (index %d) of your mobile no. is %s", (index+1), position, index, mobile.charAt(index));
+
+                        default -> System.out.println("Wrong Option!");
+                    }
+                } else { System.out.println("Wrong Choice!"); }
+
             }
 
             case 5 -> {
