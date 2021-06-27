@@ -6,7 +6,7 @@ interface WaterHabitat {
     void swim();
 }
 
-class Amphibians implements LandHabitat, WaterHabitat{
+class Amphibians implements LandHabitat, WaterHabitat {
     public void walk() {
         System.out.println("I can walk");
     }
